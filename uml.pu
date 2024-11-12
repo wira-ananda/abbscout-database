@@ -1,0 +1,19 @@
+@startuml
+
+actor Pengguna
+
+usecase "Login" as UC_Login
+usecase "Lihat Informasi Organisasi" as UC_Homepage
+usecase "Kelola Keuangan" as UC_Keuangan
+usecase "Kelola Program Kerja" as UC_ProgramKerja
+usecase "Kelola Administrasi" as UC_Administrasi
+usecase "Lihat Struktur Kepengurusan" as UC_StrukturKepengurusan
+
+Pengguna --> UC_Login
+Pengguna --> UC_Homepage : Setelah Login
+Pengguna --> UC_Keuangan : Akses dari Dashboard
+Pengguna --> UC_ProgramKerja : Akses dari Dashboard
+Pengguna --> UC_Administrasi : Akses dari Dashboard
+Pengguna --> UC_StrukturKepengurusan : Akses dari Dashboard
+
+@enduml
